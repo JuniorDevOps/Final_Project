@@ -49,7 +49,7 @@ pipeline {
             steps {
                 echo '====== Build/Test Application ======'
                 dir ('Project_29.07/spring-petclinic/') {
-                sh "mvn -f pom.xml clean install"
+                sh "./mvnw package"
                 sh "cd target && mv *.jar myapp.jar && mv myapp.jar ~/jenkins/workspace/${JOB_NAME}/Docker"
                 }              
             }
