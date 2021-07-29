@@ -1,0 +1,13 @@
+[staging]
+%{ for index, ip in stage-ip ~}
+${ip} ansible_host=${stage-ip[index]}
+%{ endfor ~}
+
+[production]
+%{ for index, ip in prod-ip ~}
+${ip} ansible_host=${prod-ip[index]} 
+%{ endfor ~}
+
+[servers_all:children]
+staging
+production

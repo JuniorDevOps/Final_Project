@@ -1,0 +1,19 @@
+---
+ - hosts: "{{ HOST }}"
+   become: true
+   ignore_errors: true
+   vars: 
+      imagename: jundevops/maven
+      contname: jundevops
+   tasks: 
+    - name: Stop previous docker container      
+      shell: docker stop "{{ contname }}"
+
+    - name: Remove stopped container
+      shell: docker rm -f "{{ contname }}"	  
+
+    - name: Remove docker images
+      shell: docker image rm -f "{{ imagename }}"
+      
+    - name: Create a docker container
+      shell: docker run -d --name "{{ contname }}" -p 8888:8080 "{{ imagename }}":"{{ BUILD }}"
