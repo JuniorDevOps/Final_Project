@@ -50,7 +50,7 @@ pipeline {
                 echo '====== Build/Test Application ======'
                 dir ('spring-petclinic/') {
                 sh "./mvnw package"
-                sh "cd target && mv *.jar myapp.jar && mv myapp.jar ~/jenkins/workspace/${JOB_NAME}/Docker"
+                sh "cd target && mv *.jar ~/jenkins/workspace/${JOB_NAME}/Docker"
                 }              
             }
         }
