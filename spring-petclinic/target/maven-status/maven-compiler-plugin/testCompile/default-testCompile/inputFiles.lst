@@ -1,0 +1,11 @@
+/home/linux/maven/spring-petclinic/src/test/java/org/springframework/samples/petclinic/service/EntityUtils.java
+/home/linux/maven/spring-petclinic/src/test/java/org/springframework/samples/petclinic/PetclinicIntegrationTests.java
+/home/linux/maven/spring-petclinic/src/test/java/org/springframework/samples/petclinic/system/CrashControllerTests.java
+/home/linux/maven/spring-petclinic/src/test/java/org/springframework/samples/petclinic/model/ValidatorTests.java
+/home/linux/maven/spring-petclinic/src/test/java/org/springframework/samples/petclinic/vet/VetControllerTests.java
+/home/linux/maven/spring-petclinic/src/test/java/org/springframework/samples/petclinic/owner/PetTypeFormatterTests.java
+/home/linux/maven/spring-petclinic/src/test/java/org/springframework/samples/petclinic/owner/OwnerControllerTests.java
+/home/linux/maven/spring-petclinic/src/test/java/org/springframework/samples/petclinic/owner/PetControllerTests.java
+/home/linux/maven/spring-petclinic/src/test/java/org/springframework/samples/petclinic/vet/VetTests.java
+/home/linux/maven/spring-petclinic/src/test/java/org/springframework/samples/petclinic/owner/VisitControllerTests.java
+/home/linux/maven/spring-petclinic/src/test/java/org/springframework/samples/petclinic/service/ClinicServiceTests.java
