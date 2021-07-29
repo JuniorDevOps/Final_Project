@@ -48,7 +48,7 @@ pipeline {
                  }  
             steps {
                 echo '====== Build/Test Application ======'
-                dir ('spring-petclinic/') {
+                dir ('Spring-petclinic/') {
                 sh "./mvnw package"
                 sh "cd target && mv *.jar ~/jenkins/workspace/${JOB_NAME}/Docker"
                 }              
